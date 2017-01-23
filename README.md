@@ -5,16 +5,16 @@ An example target device is Digilent Nexys4 board.
 
 ## Project structure
 
-src/          Sources
-  |-Test/     CLaSH tests
-  |-vhdl/     VHDL sources
-run/          Generated bitstreams
+    src/          Sources
+      |-Test/     CLaSH tests
+      |-vhdl/     VHDL sources
+    run/          Generated bitstreams
 
 ## Building project
 
 1. Install Vivado 2015.4
 2. Install CLaSH 0.6.23
-3. run `make SETTINGS="/path/to/vivado/settings.sh" VIVADO_CMD="/path/to/bin/vivado"`
+3. Run `make SETTINGS="/path/to/vivado/settings.sh" VIVADO_CMD="/path/to/bin/vivado"`
 
 ## Example bitstream
 
