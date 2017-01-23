@@ -2,7 +2,7 @@ module Cellular where
 
 import CLaSH.Prelude
 
-import FPGA.CellularArray
+import FPGA.CellularArray2
 
 {-# ANN topEntity
   (defTop

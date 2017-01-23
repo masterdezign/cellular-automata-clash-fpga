@@ -1,7 +1,7 @@
-module TestFPGA.CellularArray where
+module Test.Cellular where
 
 import CLaSH.Prelude
-import FPGA.CellularArray
+import FPGA.CellularArray2
 
 topEntity :: Signal () -> Signal (BitVector 10)
 topEntity _ = r

@@ -27,7 +27,7 @@ begin
   
   y <= result_0.tup2_sel1;
   
-  cellular_carrayt_result_0 : entity cellular_carrayt
+  cellular_carray3t_result_0 : entity cellular_carray3t
     port map
       (result   => result_0
       ,prev     => x
