@@ -1,0 +1,12 @@
+flags: {}
+extra-package-dbs: []
+packages:
+- '.'
+extra-deps:
+- clash-ghc-0.6.23
+- clash-lib-0.6.21
+- clash-prelude-0.10.14
+- clash-systemverilog-0.6.9
+- clash-verilog-0.6.9
+- clash-vhdl-0.6.16
+resolver: lts-5.10
