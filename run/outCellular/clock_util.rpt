@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version      : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date              : Mon Jan 23 17:56:33 2017
+| Date              : Tue Jan 24 10:29:54 2017
 | Host              : opt-penkovskyi01 running 64-bit Ubuntu 14.04.4 LTS
 | Command           : report_clock_utilization -file ./outCellular/clock_util.rpt
 | Design            : CellularTop
@@ -47,7 +47,7 @@ Table of Contents
 +-------+-----------------------+------------------+------+-------+-------+
 | Index | BUFG Cell             | Net Name         | BELs | Sites | Fixed |
 +-------+-----------------------+------------------+------+-------+-------+
-|     1 | clk100_IBUF_BUFG_inst | clk100_IBUF_BUFG |   56 |    19 |    no |
+|     1 | clk100_IBUF_BUFG_inst | clk100_IBUF_BUFG |   56 |    13 |    no |
 +-------+-----------------------+------------------+------+-------+-------+
 
 
