@@ -3,22 +3,22 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 package cellular_types is
-  type array_of_std_logic_vector_16 is array (integer range <>) of std_logic_vector(15 downto 0);
-  type array_of_std_logic_vector_1 is array (integer range <>) of std_logic_vector(0 downto 0);
   type tup2 is record
     tup2_sel0 : std_logic_vector(15 downto 0);
     tup2_sel1 : std_logic_vector(15 downto 0);
   end record;
+  type array_of_std_logic_vector_16 is array (integer range <>) of std_logic_vector(15 downto 0);
+  type array_of_std_logic_vector_1 is array (integer range <>) of std_logic_vector(0 downto 0);
   function toSLV (s : in signed) return std_logic_vector;
   function toSLV (slv : in std_logic_vector) return std_logic_vector;
   function toSLV (u : in unsigned) return std_logic_vector;
+  function toSLV (p : cellular_types.tup2) return std_logic_vector;
   function toSLV (value :  cellular_types.array_of_std_logic_vector_16) return std_logic_vector;
   function toSLV (b : in boolean) return std_logic_vector;
   function fromSLV (sl : in std_logic_vector) return boolean;
   function tagToEnum (s : in signed) return boolean;
   function dataToTag (b : in boolean) return signed;
   function toSLV (value :  cellular_types.array_of_std_logic_vector_1) return std_logic_vector;
-  function toSLV (p : cellular_types.tup2) return std_logic_vector;
 end;
 
 package body cellular_types is
@@ -33,6 +33,10 @@ package body cellular_types is
   function toSLV (u : in unsigned) return std_logic_vector is
   begin
     return std_logic_vector(u);
+  end;
+  function toSLV (p : cellular_types.tup2) return std_logic_vector is
+  begin
+    return (toSLV(p.tup2_sel0) & toSLV(p.tup2_sel1));
   end;
   function toSLV (value :  cellular_types.array_of_std_logic_vector_16) return std_logic_vector is
     alias ivalue    : cellular_types.array_of_std_logic_vector_16(1 to value'length) is value;
@@ -83,9 +87,5 @@ package body cellular_types is
       result(((i - 1) * 1) + 1 to i*1) := ivalue(i);
     end loop;
     return result;
-  end;
-  function toSLV (p : cellular_types.tup2) return std_logic_vector is
-  begin
-    return (toSLV(p.tup2_sel0) & toSLV(p.tup2_sel1));
   end;
 end;

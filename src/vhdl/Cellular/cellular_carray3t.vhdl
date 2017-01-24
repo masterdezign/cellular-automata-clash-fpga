@@ -29,7 +29,7 @@ begin
     signal map_out : std_logic_vector(0 downto 0);
   begin
     map_in <= xs(i)(15 downto 0);
-    cellular_carray3t_specf_0 : entity cellular_carray3t_specf
+    cellular_carray3t_specf_0_0 : entity cellular_carray3t_specf_0
   port map
   (result => map_out
   ,x => map_in);
@@ -61,7 +61,7 @@ begin
     signal map_out_1 : std_logic_vector(15 downto 0);
   begin
     map_in_1 <= xs_app_arg_0(i_1)(15 downto 0);
-    cellular_carray3t_specf_0_2 : entity cellular_carray3t_specf_0
+    cellular_carray3t_specf_2 : entity cellular_carray3t_specf
   port map
   (result => map_out_1
   ,y => map_in_1);
