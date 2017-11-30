@@ -3,5 +3,5 @@ extra-package-dbs: []
 packages:
 - '.'
 extra-deps:
-- clash-ghc-0.7.0.1
-resolver: nightly-2017-01-17
+- clash-ghc-0.9.9
+resolver: nightly-2017-08-15

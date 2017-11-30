@@ -4,7 +4,7 @@ all: build
 
 .PHONY: build
 build: clean
-	stack exec clash -- -clash-inline-limit=40 -clash-hdlsyn Vivado --vhdl ${PROJ}.hs
+	stack exec clash -- --vhdl ${PROJ}.hs
 
 .PHONY: clean
 clean:
