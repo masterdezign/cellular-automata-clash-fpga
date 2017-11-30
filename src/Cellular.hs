@@ -5,8 +5,6 @@ import Clash.Prelude
 
 import FPGA.CellularArray2
 
-type Dom50 = Dom "System" 20000
-
 {-# ANN topEntity
   (defTop
     { t_name   = "Cellular"
