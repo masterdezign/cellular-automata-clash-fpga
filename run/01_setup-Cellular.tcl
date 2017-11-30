@@ -6,6 +6,6 @@ file mkdir $outputDir
 
 # Setup the design sources
 read_vhdl $srcDir/$topName.vhdl
-add_files $srcDir/$name/
+add_files $srcDir/$name/$name/
 
 read_xdc $srcDir/${name}_Nexys4.xdc
