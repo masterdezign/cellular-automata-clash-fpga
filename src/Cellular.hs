@@ -15,7 +15,7 @@ topEntity
   :: SystemClockReset
   => Signal System (BitVector 16)
 topEntity = r
-  where ca = cArray3 d16 (Rule (0b110 :: BitVector 3)) 1 r
+  where ca = cArray3 d16 (Rule (110 :: BitVector 8)) 1 r
 
         -- Divide the clock to the "human" scale, order of Hz
         cnt = register 0 (cnt + 1) :: Signal System (Unsigned 24)

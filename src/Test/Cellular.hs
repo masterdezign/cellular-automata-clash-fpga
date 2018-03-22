@@ -7,7 +7,7 @@ topEntity
   :: SystemClockReset
   => Signal System () -> Signal System (BitVector 10)
 topEntity _ = r
-  where ca = cArray3 d10 (Rule (0b110 :: BitVector 3)) 1 r
+  where ca = cArray3 d10 (Rule (110 :: BitVector 8)) 1 r
 
         cnt = register 0 (cnt + 1) :: Signal System (Unsigned 2)
         r = regEn 0 (cnt .==. 0) ca

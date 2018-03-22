@@ -14,7 +14,7 @@ An example target device is Digilent Nexys4 board.
 
 * Install [Vivado 2015.4](https://www.xilinx.com/support/download.html)
 * [Install development version](https://github.com/clash-lang/clash-compiler/wiki/FAQ#how-do-i-run-the-development-version-of-clash)
-  Clash 0.99 using [stack](http://haskellstack.org/)
+  Clash 0.99 (rev. 8b2f5b7) using [stack](http://haskellstack.org/)
 
     $ git clone https://github.com/clash-lang/clash-compiler.git
     $ cd clash-compiler
