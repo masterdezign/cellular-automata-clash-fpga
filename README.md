@@ -1,6 +1,6 @@
 # Cellular automata
 
-Cellular automata implemented in [CLaSH](http://www.clash-lang.org).
+Cellular automata implemented in [Clash](http://www.clash-lang.org).
 An example target device is Digilent Nexys4 board.
 
 ## Project structure
@@ -12,9 +12,24 @@ An example target device is Digilent Nexys4 board.
 
 ## Building project
 
-* Install [Vivado 2015.4](https://www.xilinx.com/support/download.html)
-* Install [Clash 0.99.3](https://gist.github.com/pkvk/6142fe8b4828541bfc86aee0af26303b)
-* Run `make SETTINGS="/path/to/vivado/settings.sh" VIVADO_CMD="/path/to/bin/vivado"`
+#### Install [Vivado 2015.4](https://www.xilinx.com/support/download.html)
+#### Install Clash 0.99.3
+
+NB: The following commands should *not* be run in a directory containing a stack.yaml file.
+
+Install Stack from https://haskellstack.org
+
+     $ curl -sSL https://get.haskellstack.org/ | sh
+
+Run
+
+     $ stack setup --resolver=lts-12.19
+
+Install Clash
+
+     $ stack install --resolver=lts-12.19 clash-ghc-0.99.3
+
+#### Run `make SETTINGS="/path/to/vivado/settings.sh" VIVADO_CMD="/path/to/bin/vivado"`
 
 ## Example bitstream
 

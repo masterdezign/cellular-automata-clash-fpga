@@ -4,7 +4,7 @@ all: build
 
 .PHONY: build
 build: clean
-	stack exec clash -- --vhdl ${PROJ}.hs
+	stack exec clash -- --resolver=lts-12.19 --vhdl ${PROJ}.hs
 
 .PHONY: clean
 clean:
