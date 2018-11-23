@@ -9,35 +9,61 @@ use work.cellular_types.all;
 
 entity Cellular is
   port(-- clock
-       \#$d(%,%)_0\  : in std_logic;
+       CLOCK         : in std_logic;
        -- asynchronous reset: active high
-       \#$d(%,%)_1\  : in std_logic;
+       RST           : in std_logic;
        current_state : out std_logic_vector(15 downto 0));
 end;
 
 architecture structural of Cellular is
-  signal \#result_rec\  : std_logic_vector(15 downto 0);
+  signal cnt            : unsigned(23 downto 0);
   signal \#r_app_arg\   : cellular_types.gatedclock;
   signal \#r_app_arg_0\ : std_logic_vector(15 downto 0);
-  signal cnt            : unsigned(23 downto 0);
-  signal \$d(%,%)\      : cellular_types.product;
+  signal \#r_rec\       : std_logic_vector(15 downto 0);
 begin
-  \$d(%,%)\ <= (product_sel0 => \#$d(%,%)_0\
-               ,product_sel1 => \#$d(%,%)_1\);
+  -- register begin 
+  cellular_register : process(CLOCK,RST)
+  begin
+    if RST = '1' then
+      cnt <= to_unsigned(0,24)
+      -- pragma translate_off
+      after 1 ps
+      -- pragma translate_on
+      ;
+    elsif rising_edge(CLOCK) then
+      cnt <= (cnt + to_unsigned(1,24))
+      -- pragma translate_off
+      after 1 ps
+      -- pragma translate_on
+      ;
+    end if;
+  end process;
+  -- register end
+
+  -- clockGate begin
+  \#r_app_arg\ <= (CLOCK,(cnt = to_unsigned(0,24)));
+  -- clockGate end
+
+  cellular_carray3t_r_app_arg_0 : entity cellular_carray3t
+    port map
+      ( eta2 => \#r_app_arg_0\
+      , clk  => CLOCK
+      , rst  => RST
+      , i1   => \#r_rec\ );
 
   -- register begin
-  cellular_register : block
-    signal clk : std_logic;
-    signal ce : boolean;
+  cellular_register_0 : block
+    signal clk_0 : std_logic;
+    signal ce_0 : boolean;
   begin
-    (clk,ce) <= \#r_app_arg\;
-    cellular_reg : process(clk,\$d(%,%)\.product_sel1)
+    (clk_0,ce_0) <= \#r_app_arg\;
+    cellular_reg_0 : process(clk_0,RST)
     begin
-      if \$d(%,%)\.product_sel1 = '1' then
-        \#result_rec\ <= std_logic_vector'(x"0000");
-      elsif rising_edge(clk) then
-        if ce then
-          \#result_rec\ <= \#r_app_arg_0\
+      if RST = '1' then
+        \#r_rec\ <= std_logic_vector'(x"0000");
+      elsif rising_edge(clk_0) then
+        if ce_0 then
+          \#r_rec\ <= \#r_app_arg_0\
           -- pragma translate_off
           after 1 ps
           -- pragma translate_on
@@ -48,36 +74,6 @@ begin
   end block;
   -- register end
 
-  -- clockGate begin
-  \#r_app_arg\ <= (\$d(%,%)\.product_sel0,(cnt = to_unsigned(0,24)));
-  -- clockGate end
-
-  cellular_carray3t_r_app_arg_0 : entity cellular_carray3t
-    port map
-      (eta2     => \#r_app_arg_0\
-      ,\#pTS\   => \$d(%,%)\.product_sel0
-      ,\#pTS_0\ => \$d(%,%)\.product_sel1
-      ,i1       => \#result_rec\);
-
-  -- register begin 
-  cellular_register_0 : process(\$d(%,%)\.product_sel0,\$d(%,%)\.product_sel1)
-  begin
-    if \$d(%,%)\.product_sel1 = '1' then
-      cnt <= to_unsigned(0,24)
-      -- pragma translate_off
-      after 1 ps
-      -- pragma translate_on
-      ;
-    elsif rising_edge(\$d(%,%)\.product_sel0) then
-      cnt <= (cnt + to_unsigned(1,24))
-      -- pragma translate_off
-      after 1 ps
-      -- pragma translate_on
-      ;
-    end if;
-  end process;
-  -- register end
-
-  current_state <= \#result_rec\;
+  current_state <= \#r_rec\;
 end;
 

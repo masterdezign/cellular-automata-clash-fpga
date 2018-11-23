@@ -22,9 +22,9 @@ architecture Wrapper of CellularTop is
 component Cellular is
   port(
        -- clock
-       system1000      : in std_logic;
+       CLOCK      : in std_logic;
        -- asynchronous reset: active low
-       system1000_rstn : in std_logic;
+       RST : in std_logic;
        current_state   : out std_logic_vector(15 downto 0));
 end component;
 
@@ -33,8 +33,8 @@ begin
     port map
     (
        -- clock
-       system1000 => clk100,
-       system1000_rstn => not reset,
+       CLOCK => clk100,
+       RST => not reset,
        current_state => led
     );
 
