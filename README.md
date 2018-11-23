@@ -10,7 +10,7 @@ An example target device is Digilent Nexys4 board.
       |-vhdl/     VHDL sources
     run/          Generated bitstreams
 
-## Building project
+## Building the project
 
 #### Install [Vivado 2015.4](https://www.xilinx.com/support/download.html)
 #### Install Clash 0.99.3
