@@ -29,7 +29,9 @@ Install Clash
 
      $ stack install --resolver=lts-12.19 clash-ghc-0.99.3
 
-#### Run `make SETTINGS="/path/to/vivado/settings.sh" VIVADO_CMD="/path/to/bin/vivado"`
+#### Build the project
+
+     $ make SETTINGS="/path/to/vivado/settings.sh" VIVADO_CMD="/path/to/bin/vivado"
 
 ## Example bitstream
 
