@@ -1,7 +1,0 @@
-flags: {}
-extra-package-dbs: []
-packages:
-- '.'
-extra-deps:
-- clash-ghc-0.9.9
-resolver: nightly-2017-08-15
