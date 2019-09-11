@@ -34,7 +34,7 @@ begin
     (
        -- clock
        CLOCK => clk100,
-       RST => not reset,
+       RST => reset,
        current_state => led
     );
 
