@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Wed Sep 11 15:48:41 2019
+| Date         : Wed Sep 11 17:38:41 2019
 | Host         : osboxes running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_timing -sort_by group -max_paths 100 -path_type summary -file ./outCellular/post_route_timing.rpt
 | Design       : CellularTop
@@ -13,168 +13,254 @@ Timing Report
 
 Startpoint                     Endpoint                       Slack(ns)     
 ----------------------------------------------------------------------------
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[16]/CE   6.219         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[17]/CE   6.219         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[18]/CE   6.219         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[19]/CE   6.219         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[12]/CE   6.406         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[13]/CE   6.406         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[14]/CE   6.406         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[15]/CE   6.406         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/CE
-                                                              6.473         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[1]/CE
-                                                              6.473         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/CE
-                                                              6.473         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[6]/CE
-                                                              6.475         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[10]/CE
-                                                              6.475         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[11]/CE
-                                                              6.475         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/CE
-                                                              6.475         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[9]/CE
-                                                              6.475         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[3]/CE
-                                                              6.537         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/CE
-                                                              6.537         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[5]/CE
-                                                              6.537         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[7]/CE
-                                                              6.537         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/CE
-                                                              6.537         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[13]/CE
-                                                              6.616         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[14]/CE
-                                                              6.616         
-CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/CE
-                                                              6.616         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[10]/CE   6.700         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[11]/CE   6.700         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[7]/D     7.062         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[6]/D     7.115         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[5]/D     7.170         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[11]/D    7.372         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[4]/CE    7.457         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[10]/D    7.467         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[3]/D
-                                                              7.500         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[4]/D
-                                                              7.520         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[21]/D    7.528         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[23]/D    7.549         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[22]/D    7.623         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[20]/D    7.639         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[17]/D    7.643         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[19]/D    7.664         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[5]/D
-                                                              7.670         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[18]/D    7.738         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[16]/D    7.754         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[13]/D    7.757         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[15]/D    7.778         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[14]/D    7.852         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[12]/D    7.868         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[9]/D     7.872         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[8]/D     7.983         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[4]/D     8.099         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[3]/D     8.257         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[9]/D
-                                                              8.288         
-CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[2]/D     8.317         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[5]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[6]/D
-                                                              8.477         
-CELLULAR_inst/cnt_reg[0]/C     CELLULAR_inst/cnt_reg[1]/D     8.502         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[7]/D
-                                                              8.526         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[8]/D
-                                                              8.540         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[1]/D
-                                                              8.563         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[14]/D
-                                                              8.573         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[11]/D
-                                                              8.577         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[2]/D
-                                                              8.582         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[15]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/D
-                                                              8.582         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[13]/D
-                                                              8.585         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[12]/D
-                                                              8.586         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[14]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[14]/D
-                                                              8.587         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[15]/D
-                                                              8.597         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[9]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[9]/D
-                                                              8.622         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[12]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/D
-                                                              8.655         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[7]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[7]/D
-                                                              8.678         
-CELLULAR_inst/cnt_reg[0]/C     CELLULAR_inst/cnt_reg[0]/D     8.679         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[4]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/D
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[16]/CE
+                                                              6.219         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[17]/CE
+                                                              6.219         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[18]/CE
+                                                              6.219         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[19]/CE
+                                                              6.219         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[12]/CE
+                                                              6.406         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[13]/CE
+                                                              6.406         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/CE
+                                                              6.406         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[15]/CE
+                                                              6.406         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[10]/CE
+                                                              6.596         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[11]/CE
+                                                              6.596         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[12]/CE
+                                                              6.596         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[9]/CE
+                                                              6.596         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[10]/CE
+                                                              6.700         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[11]/CE
+                                                              6.700         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[13]/CE
+                                                              6.917         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[14]/CE
+                                                              6.917         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[15]/CE
+                                                              6.917         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[5]/CE
+                                                              6.917         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[6]/CE
+                                                              6.917         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[7]/CE
+                                                              6.917         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[8]/CE
+                                                              6.917         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[3]/CE
+                                                              6.920         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[4]/CE
+                                                              6.920         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/CE
+                                                              6.923         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[1]/CE
+                                                              6.923         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[2]/CE
+                                                              6.923         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[7]/D
+                                                              7.062         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[6]/D
+                                                              7.115         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[5]/D
+                                                              7.170         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[11]/D
+                                                              7.372         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[4]/CE
+                                                              7.457         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[4]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[3]/D
+                                                              7.463         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[10]/D
+                                                              7.467         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[4]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[4]/D
+                                                              7.481         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[21]/D
+                                                              7.528         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[23]/D
+                                                              7.549         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[22]/D
+                                                              7.623         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[20]/D
+                                                              7.639         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[17]/D
+                                                              7.643         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[19]/D
+                                                              7.664         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[18]/D
+                                                              7.738         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[16]/D
+                                                              7.754         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[13]/D
+                                                              7.757         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[15]/D
+                                                              7.778         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[14]/D
+                                                              7.852         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[12]/D
+                                                              7.868         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[9]/D
+                                                              7.872         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[8]/D
+                                                              7.983         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[11]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[10]/D
+                                                              8.047         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[13]/D
+                                                              8.067         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[14]/D
+                                                              8.083         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[4]/D
+                                                              8.099         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[8]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[9]/D
+                                                              8.245         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[3]/D
+                                                              8.257         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[2]/D
+                                                              8.317         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[15]/D
+                                                              8.369         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[15]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[0]/D
+                                                              8.374         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[2]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[1]/D
+                                                              8.458         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[12]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[11]/D
+                                                              8.475         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[2]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[2]/D
+                                                              8.476         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[12]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[12]/D
+                                                              8.491         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[0]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[1]/D
+                                                              8.502         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[4]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[5]/D
+                                                              8.506         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[6]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[7]/D
+                                                              8.508         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[6]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[6]/D
+                                                              8.523         
+CELLULAR_inst/cellular_register.cr_rec_reg_reg[8]/C
+                               CELLULAR_inst/cellular_register_0.prev_reg_reg[8]/D
+                                                              8.613         
+CELLULAR_inst/cellular_register_1.cnt_reg_reg[0]/C
+                               CELLULAR_inst/cellular_register_1.cnt_reg_reg[0]/D
+                                                              8.679         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[13]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[13]/D
+                                                              8.683         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[4]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[4]/D
                                                               8.688         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[9]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[10]/D
-                                                              8.733         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[10]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[10]/D
-                                                              8.796         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[13]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[13]/D
-                                                              8.796         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[6]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[6]/D
-                                                              8.807         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[1]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[1]/D
-                                                              8.823         
-CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/C
-                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/D
-                                                              8.827         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[5]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[5]/D
-                                                              8.890         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[11]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[11]/D
-                                                              8.964         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/D
-                                                              8.978         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[2]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/D
-                                                              9.040         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[3]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[3]/D
-                                                              9.085         
-CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[8]/C
-                               CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/D
+CELLULAR_inst/cellular_register_0.prev_reg_reg[9]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[9]/D
+                                                              8.707         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[12]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[12]/D
+                                                              8.752         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[8]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[8]/D
+                                                              8.813         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[11]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[11]/D
+                                                              8.818         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[1]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[1]/D
+                                                              8.829         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[5]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[5]/D
+                                                              8.849         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[15]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[15]/D
+                                                              8.857         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[14]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[14]/D
+                                                              8.954         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[0]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/D
+                                                              9.062         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[10]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[10]/D
+                                                              9.076         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[3]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[3]/D
+                                                              9.076         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[7]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[7]/D
+                                                              9.125         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[2]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[2]/D
+                                                              9.128         
+CELLULAR_inst/cellular_register_0.prev_reg_reg[6]/C
+                               CELLULAR_inst/cellular_register.cr_rec_reg_reg[6]/D
                                                               9.142         
 
 

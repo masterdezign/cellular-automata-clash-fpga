@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Wed Sep 11 15:48:44 2019
+-- Date        : Wed Sep 11 17:38:44 2019
 -- Host        : osboxes running 64-bit Ubuntu 16.04.6 LTS
 -- Command     : write_vhdl -force ./outCellular/proj_impl_netlist.v
 -- Design      : CellularTop
@@ -9,326 +9,6 @@
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
 -- Device      : xc7a100tcsg324-1
 -- --------------------------------------------------------------------------------
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;
-entity cellular_carray3t is
-  port (
-    Q : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    CLK : in STD_LOGIC;
-    AR : in STD_LOGIC_VECTOR ( 0 to 0 );
-    \eta2_reg[15]_0\ : in STD_LOGIC_VECTOR ( 15 downto 0 )
-  );
-end cellular_carray3t;
-
-architecture STRUCTURE of cellular_carray3t is
-  signal result : STD_LOGIC_VECTOR ( 15 downto 0 );
-  attribute SOFT_HLUTNM : string;
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_10\ : label is "soft_lutpair4";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_11\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_12\ : label is "soft_lutpair5";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_13\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_14\ : label is "soft_lutpair6";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_2\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_3\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_4\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_5\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_6\ : label is "soft_lutpair2";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_7\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_8\ : label is "soft_lutpair3";
-  attribute SOFT_HLUTNM of \#tup_app_arg_0_9\ : label is "soft_lutpair4";
-begin
-\#tup_app_arg_0_0\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(1),
-      I1 => \eta2_reg[15]_0\(0),
-      I2 => \eta2_reg[15]_0\(15),
-      O => result(0)
-    );
-\#tup_app_arg_0_1\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(2),
-      I1 => \eta2_reg[15]_0\(1),
-      I2 => \eta2_reg[15]_0\(0),
-      O => result(1)
-    );
-\#tup_app_arg_0_10\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(11),
-      I1 => \eta2_reg[15]_0\(10),
-      I2 => \eta2_reg[15]_0\(9),
-      O => result(10)
-    );
-\#tup_app_arg_0_11\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(12),
-      I1 => \eta2_reg[15]_0\(11),
-      I2 => \eta2_reg[15]_0\(10),
-      O => result(11)
-    );
-\#tup_app_arg_0_12\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(13),
-      I1 => \eta2_reg[15]_0\(12),
-      I2 => \eta2_reg[15]_0\(11),
-      O => result(12)
-    );
-\#tup_app_arg_0_13\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(14),
-      I1 => \eta2_reg[15]_0\(13),
-      I2 => \eta2_reg[15]_0\(12),
-      O => result(13)
-    );
-\#tup_app_arg_0_14\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(15),
-      I1 => \eta2_reg[15]_0\(14),
-      I2 => \eta2_reg[15]_0\(13),
-      O => result(14)
-    );
-\#tup_app_arg_0_15\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(0),
-      I1 => \eta2_reg[15]_0\(15),
-      I2 => \eta2_reg[15]_0\(14),
-      O => result(15)
-    );
-\#tup_app_arg_0_2\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(3),
-      I1 => \eta2_reg[15]_0\(2),
-      I2 => \eta2_reg[15]_0\(1),
-      O => result(2)
-    );
-\#tup_app_arg_0_3\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(4),
-      I1 => \eta2_reg[15]_0\(3),
-      I2 => \eta2_reg[15]_0\(2),
-      O => result(3)
-    );
-\#tup_app_arg_0_4\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(5),
-      I1 => \eta2_reg[15]_0\(4),
-      I2 => \eta2_reg[15]_0\(3),
-      O => result(4)
-    );
-\#tup_app_arg_0_5\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(6),
-      I1 => \eta2_reg[15]_0\(5),
-      I2 => \eta2_reg[15]_0\(4),
-      O => result(5)
-    );
-\#tup_app_arg_0_6\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(7),
-      I1 => \eta2_reg[15]_0\(6),
-      I2 => \eta2_reg[15]_0\(5),
-      O => result(6)
-    );
-\#tup_app_arg_0_7\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(8),
-      I1 => \eta2_reg[15]_0\(7),
-      I2 => \eta2_reg[15]_0\(6),
-      O => result(7)
-    );
-\#tup_app_arg_0_8\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(9),
-      I1 => \eta2_reg[15]_0\(8),
-      I2 => \eta2_reg[15]_0\(7),
-      O => result(8)
-    );
-\#tup_app_arg_0_9\: unisim.vcomponents.LUT3
-    generic map(
-      INIT => X"7C"
-    )
-        port map (
-      I0 => \eta2_reg[15]_0\(10),
-      I1 => \eta2_reg[15]_0\(9),
-      I2 => \eta2_reg[15]_0\(8),
-      O => result(9)
-    );
-\eta2_reg[0]\: unisim.vcomponents.FDPE
-     port map (
-      C => CLK,
-      CE => '1',
-      D => result(0),
-      PRE => AR(0),
-      Q => Q(0)
-    );
-\eta2_reg[10]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(10),
-      Q => Q(10)
-    );
-\eta2_reg[11]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(11),
-      Q => Q(11)
-    );
-\eta2_reg[12]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(12),
-      Q => Q(12)
-    );
-\eta2_reg[13]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(13),
-      Q => Q(13)
-    );
-\eta2_reg[14]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(14),
-      Q => Q(14)
-    );
-\eta2_reg[15]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(15),
-      Q => Q(15)
-    );
-\eta2_reg[1]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(1),
-      Q => Q(1)
-    );
-\eta2_reg[2]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(2),
-      Q => Q(2)
-    );
-\eta2_reg[3]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(3),
-      Q => Q(3)
-    );
-\eta2_reg[4]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(4),
-      Q => Q(4)
-    );
-\eta2_reg[5]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(5),
-      Q => Q(5)
-    );
-\eta2_reg[6]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(6),
-      Q => Q(6)
-    );
-\eta2_reg[7]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(7),
-      Q => Q(7)
-    );
-\eta2_reg[8]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(8),
-      Q => Q(8)
-    );
-\eta2_reg[9]\: unisim.vcomponents.FDCE
-     port map (
-      C => CLK,
-      CE => '1',
-      CLR => AR(0),
-      D => result(9),
-      Q => Q(9)
-    );
-end STRUCTURE;
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
@@ -343,583 +23,1048 @@ end Cellular;
 
 architecture STRUCTURE of Cellular is
   signal \^q\ : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal ce_0 : STD_LOGIC;
-  signal \cellular_register_0.#r_rec[15]_i_2_n_0\ : STD_LOGIC;
-  signal \cellular_register_0.#r_rec[15]_i_3_n_0\ : STD_LOGIC;
-  signal \cellular_register_0.#r_rec[15]_i_4_n_0\ : STD_LOGIC;
-  signal \cellular_register_0.#r_rec[15]_i_5_n_0\ : STD_LOGIC;
-  signal \cnt[0]_i_2_n_0\ : STD_LOGIC;
-  signal cnt_reg : STD_LOGIC_VECTOR ( 23 downto 0 );
-  signal \cnt_reg[0]_i_1_n_0\ : STD_LOGIC;
-  signal \cnt_reg[0]_i_1_n_4\ : STD_LOGIC;
-  signal \cnt_reg[0]_i_1_n_5\ : STD_LOGIC;
-  signal \cnt_reg[0]_i_1_n_6\ : STD_LOGIC;
-  signal \cnt_reg[0]_i_1_n_7\ : STD_LOGIC;
-  signal \cnt_reg[10]_CE_cooolgate_en_sig_1\ : STD_LOGIC;
-  signal \cnt_reg[12]_i_1_n_0\ : STD_LOGIC;
-  signal \cnt_reg[12]_i_1_n_4\ : STD_LOGIC;
-  signal \cnt_reg[12]_i_1_n_5\ : STD_LOGIC;
-  signal \cnt_reg[12]_i_1_n_6\ : STD_LOGIC;
-  signal \cnt_reg[12]_i_1_n_7\ : STD_LOGIC;
-  signal \cnt_reg[16]_i_1_n_0\ : STD_LOGIC;
-  signal \cnt_reg[16]_i_1_n_4\ : STD_LOGIC;
-  signal \cnt_reg[16]_i_1_n_5\ : STD_LOGIC;
-  signal \cnt_reg[16]_i_1_n_6\ : STD_LOGIC;
-  signal \cnt_reg[16]_i_1_n_7\ : STD_LOGIC;
-  signal \cnt_reg[20]_i_1_n_4\ : STD_LOGIC;
-  signal \cnt_reg[20]_i_1_n_5\ : STD_LOGIC;
-  signal \cnt_reg[20]_i_1_n_6\ : STD_LOGIC;
-  signal \cnt_reg[20]_i_1_n_7\ : STD_LOGIC;
-  signal \cnt_reg[4]_i_1_n_0\ : STD_LOGIC;
-  signal \cnt_reg[4]_i_1_n_4\ : STD_LOGIC;
-  signal \cnt_reg[4]_i_1_n_5\ : STD_LOGIC;
-  signal \cnt_reg[4]_i_1_n_6\ : STD_LOGIC;
-  signal \cnt_reg[4]_i_1_n_7\ : STD_LOGIC;
-  signal \cnt_reg[8]_i_1_n_0\ : STD_LOGIC;
-  signal \cnt_reg[8]_i_1_n_4\ : STD_LOGIC;
-  signal \cnt_reg[8]_i_1_n_5\ : STD_LOGIC;
-  signal \cnt_reg[8]_i_1_n_6\ : STD_LOGIC;
-  signal \cnt_reg[8]_i_1_n_7\ : STD_LOGIC;
-  signal eta2 : STD_LOGIC_VECTOR ( 15 downto 0 );
-  signal \NLW_cnt_reg[0]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \NLW_cnt_reg[12]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \NLW_cnt_reg[16]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \NLW_cnt_reg[20]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \NLW_cnt_reg[4]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal \NLW_cnt_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \cellular_register.cr_rec_reg[15]_i_1_n_0\ : STD_LOGIC;
+  signal \cellular_register.cr_rec_reg[15]_i_2_n_0\ : STD_LOGIC;
+  signal \cellular_register.cr_rec_reg[15]_i_3_n_0\ : STD_LOGIC;
+  signal \cellular_register.cr_rec_reg[15]_i_4_n_0\ : STD_LOGIC;
+  signal \cellular_register.cr_rec_reg[15]_i_5_n_0\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg[0]_i_2_n_0\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg\ : STD_LOGIC_VECTOR ( 23 downto 0 );
+  signal \cellular_register_1.cnt_reg_reg[0]_i_1_n_0\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[0]_i_1_n_4\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[0]_i_1_n_5\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[0]_i_1_n_6\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[0]_i_1_n_7\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[12]_i_1_n_0\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[12]_i_1_n_4\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[12]_i_1_n_5\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[12]_i_1_n_6\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[12]_i_1_n_7\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[16]_i_1_n_0\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[16]_i_1_n_4\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[16]_i_1_n_5\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[16]_i_1_n_6\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[16]_i_1_n_7\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[20]_i_1_n_4\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[20]_i_1_n_5\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[20]_i_1_n_6\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[20]_i_1_n_7\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[4]_i_1_n_0\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[4]_i_1_n_4\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[4]_i_1_n_5\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[4]_i_1_n_6\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[4]_i_1_n_7\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[8]_i_1_n_0\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[8]_i_1_n_4\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[8]_i_1_n_5\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[8]_i_1_n_6\ : STD_LOGIC;
+  signal \cellular_register_1.cnt_reg_reg[8]_i_1_n_7\ : STD_LOGIC;
+  signal prev_reg : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal result : STD_LOGIC_VECTOR ( 15 downto 0 );
+  signal \NLW_cellular_register_1.cnt_reg_reg[0]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \NLW_cellular_register_1.cnt_reg_reg[12]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \NLW_cellular_register_1.cnt_reg_reg[16]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \NLW_cellular_register_1.cnt_reg_reg[20]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \NLW_cellular_register_1.cnt_reg_reg[4]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \NLW_cellular_register_1.cnt_reg_reg[8]_i_1_CO_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute OPT_MODIFIED : string;
-  attribute OPT_MODIFIED of \cnt_reg[0]_i_1\ : label is "SWEEP";
+  attribute OPT_MODIFIED of \cellular_register_1.cnt_reg_reg[0]_i_1\ : label is "SWEEP";
   attribute IS_CLOCK_GATED : boolean;
-  attribute IS_CLOCK_GATED of \cnt_reg[10]\ : label is std.standard.true;
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[10]\ : label is std.standard.true;
   attribute IS_PWROPT_IDT_ONLY : boolean;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[10]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[10]\ : label is std.standard.true;
   attribute POWER_OPTED_CE : string;
-  attribute POWER_OPTED_CE of \cnt_reg[10]\ : label is "CE=NEW";
-  attribute IS_CLOCK_GATED of \cnt_reg[11]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[11]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[11]\ : label is "CE=NEW";
-  attribute IS_CLOCK_GATED of \cnt_reg[12]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[12]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[12]\ : label is "CE=NEW";
-  attribute OPT_MODIFIED of \cnt_reg[12]_i_1\ : label is "SWEEP";
-  attribute IS_CLOCK_GATED of \cnt_reg[13]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[13]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[13]\ : label is "CE=NEW";
-  attribute IS_CLOCK_GATED of \cnt_reg[14]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[14]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[14]\ : label is "CE=NEW";
-  attribute IS_CLOCK_GATED of \cnt_reg[15]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[15]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[15]\ : label is "CE=NEW";
-  attribute IS_CLOCK_GATED of \cnt_reg[16]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[16]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[16]\ : label is "CE=NEW";
-  attribute OPT_MODIFIED of \cnt_reg[16]_i_1\ : label is "SWEEP";
-  attribute IS_CLOCK_GATED of \cnt_reg[17]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[17]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[17]\ : label is "CE=NEW";
-  attribute IS_CLOCK_GATED of \cnt_reg[18]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[18]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[18]\ : label is "CE=NEW";
-  attribute IS_CLOCK_GATED of \cnt_reg[19]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[19]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[19]\ : label is "CE=NEW";
-  attribute OPT_MODIFIED of \cnt_reg[20]_i_1\ : label is "SWEEP";
-  attribute IS_CLOCK_GATED of \cnt_reg[4]\ : label is std.standard.true;
-  attribute IS_PWROPT_IDT_ONLY of \cnt_reg[4]\ : label is std.standard.true;
-  attribute POWER_OPTED_CE of \cnt_reg[4]\ : label is "CE=NEW";
-  attribute OPT_MODIFIED of \cnt_reg[4]_i_1\ : label is "SWEEP";
-  attribute OPT_MODIFIED of \cnt_reg[8]_i_1\ : label is "SWEEP";
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[10]\ : label is "CE=NEW";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[11]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[11]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[11]\ : label is "CE=NEW";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[12]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[12]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[12]\ : label is "CE=NEW";
+  attribute OPT_MODIFIED of \cellular_register_1.cnt_reg_reg[12]_i_1\ : label is "SWEEP";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[13]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[13]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[13]\ : label is "CE=NEW";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[14]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[14]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[14]\ : label is "CE=NEW";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[15]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[15]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[15]\ : label is "CE=NEW";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[16]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[16]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[16]\ : label is "CE=NEW";
+  attribute OPT_MODIFIED of \cellular_register_1.cnt_reg_reg[16]_i_1\ : label is "SWEEP";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[17]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[17]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[17]\ : label is "CE=NEW";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[18]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[18]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[18]\ : label is "CE=NEW";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[19]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[19]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[19]\ : label is "CE=NEW";
+  attribute OPT_MODIFIED of \cellular_register_1.cnt_reg_reg[20]_i_1\ : label is "SWEEP";
+  attribute IS_CLOCK_GATED of \cellular_register_1.cnt_reg_reg[4]\ : label is std.standard.true;
+  attribute IS_PWROPT_IDT_ONLY of \cellular_register_1.cnt_reg_reg[4]\ : label is std.standard.true;
+  attribute POWER_OPTED_CE of \cellular_register_1.cnt_reg_reg[4]\ : label is "CE=NEW";
+  attribute OPT_MODIFIED of \cellular_register_1.cnt_reg_reg[4]_i_1\ : label is "SWEEP";
+  attribute OPT_MODIFIED of \cellular_register_1.cnt_reg_reg[8]_i_1\ : label is "SWEEP";
+  attribute SOFT_HLUTNM : string;
+  attribute SOFT_HLUTNM of result_0_1 : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of result_0_10 : label is "soft_lutpair4";
+  attribute SOFT_HLUTNM of result_0_11 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of result_0_12 : label is "soft_lutpair5";
+  attribute SOFT_HLUTNM of result_0_13 : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of result_0_14 : label is "soft_lutpair6";
+  attribute SOFT_HLUTNM of result_0_2 : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of result_0_3 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of result_0_4 : label is "soft_lutpair1";
+  attribute SOFT_HLUTNM of result_0_5 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of result_0_6 : label is "soft_lutpair2";
+  attribute SOFT_HLUTNM of result_0_7 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of result_0_8 : label is "soft_lutpair3";
+  attribute SOFT_HLUTNM of result_0_9 : label is "soft_lutpair4";
 begin
   Q(15 downto 0) <= \^q\(15 downto 0);
-cellular_carray3t_r_app_arg_0: entity work.cellular_carray3t
-     port map (
-      AR(0) => AR(0),
-      CLK => CLK,
-      Q(15 downto 0) => eta2(15 downto 0),
-      \eta2_reg[15]_0\(15 downto 0) => \^q\(15 downto 0)
-    );
-\cellular_register_0.#r_rec[15]_i_1\: unisim.vcomponents.LUT4
+\cellular_register.cr_rec_reg[15]_i_1\: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"4000"
+      INIT => X"8000"
     )
         port map (
-      I0 => \cellular_register_0.#r_rec[15]_i_2_n_0\,
-      I1 => \cellular_register_0.#r_rec[15]_i_3_n_0\,
-      I2 => \cellular_register_0.#r_rec[15]_i_4_n_0\,
-      I3 => \cellular_register_0.#r_rec[15]_i_5_n_0\,
-      O => ce_0
+      I0 => \cellular_register.cr_rec_reg[15]_i_2_n_0\,
+      I1 => \cellular_register.cr_rec_reg[15]_i_3_n_0\,
+      I2 => \cellular_register.cr_rec_reg[15]_i_4_n_0\,
+      I3 => \cellular_register.cr_rec_reg[15]_i_5_n_0\,
+      O => \cellular_register.cr_rec_reg[15]_i_1_n_0\
     );
-\cellular_register_0.#r_rec[15]_i_2\: unisim.vcomponents.LUT6
-    generic map(
-      INIT => X"FFFFFFFFFFFFFFFE"
-    )
-        port map (
-      I0 => cnt_reg(14),
-      I1 => cnt_reg(12),
-      I2 => cnt_reg(13),
-      I3 => cnt_reg(17),
-      I4 => cnt_reg(15),
-      I5 => cnt_reg(16),
-      O => \cellular_register_0.#r_rec[15]_i_2_n_0\
-    );
-\cellular_register_0.#r_rec[15]_i_3\: unisim.vcomponents.LUT6
+\cellular_register.cr_rec_reg[15]_i_2\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000000000001"
     )
         port map (
-      I0 => cnt_reg(22),
-      I1 => cnt_reg(21),
-      I2 => cnt_reg(23),
-      I3 => cnt_reg(18),
-      I4 => cnt_reg(19),
-      I5 => cnt_reg(20),
-      O => \cellular_register_0.#r_rec[15]_i_3_n_0\
+      I0 => \cellular_register_1.cnt_reg_reg\(14),
+      I1 => \cellular_register_1.cnt_reg_reg\(15),
+      I2 => \cellular_register_1.cnt_reg_reg\(12),
+      I3 => \cellular_register_1.cnt_reg_reg\(13),
+      I4 => \cellular_register_1.cnt_reg_reg\(17),
+      I5 => \cellular_register_1.cnt_reg_reg\(16),
+      O => \cellular_register.cr_rec_reg[15]_i_2_n_0\
     );
-\cellular_register_0.#r_rec[15]_i_4\: unisim.vcomponents.LUT6
+\cellular_register.cr_rec_reg[15]_i_3\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000000000001"
     )
         port map (
-      I0 => cnt_reg(11),
-      I1 => cnt_reg(9),
-      I2 => cnt_reg(10),
-      I3 => cnt_reg(6),
-      I4 => cnt_reg(7),
-      I5 => cnt_reg(8),
-      O => \cellular_register_0.#r_rec[15]_i_4_n_0\
+      I0 => \cellular_register_1.cnt_reg_reg\(2),
+      I1 => \cellular_register_1.cnt_reg_reg\(3),
+      I2 => \cellular_register_1.cnt_reg_reg\(0),
+      I3 => \cellular_register_1.cnt_reg_reg\(1),
+      I4 => \cellular_register_1.cnt_reg_reg\(5),
+      I5 => \cellular_register_1.cnt_reg_reg\(4),
+      O => \cellular_register.cr_rec_reg[15]_i_3_n_0\
     );
-\cellular_register_0.#r_rec[15]_i_5\: unisim.vcomponents.LUT6
+\cellular_register.cr_rec_reg[15]_i_4\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"0000000000000001"
     )
         port map (
-      I0 => cnt_reg(5),
-      I1 => cnt_reg(3),
-      I2 => cnt_reg(4),
-      I3 => cnt_reg(0),
-      I4 => cnt_reg(1),
-      I5 => cnt_reg(2),
-      O => \cellular_register_0.#r_rec[15]_i_5_n_0\
+      I0 => \cellular_register_1.cnt_reg_reg\(8),
+      I1 => \cellular_register_1.cnt_reg_reg\(9),
+      I2 => \cellular_register_1.cnt_reg_reg\(6),
+      I3 => \cellular_register_1.cnt_reg_reg\(7),
+      I4 => \cellular_register_1.cnt_reg_reg\(11),
+      I5 => \cellular_register_1.cnt_reg_reg\(10),
+      O => \cellular_register.cr_rec_reg[15]_i_4_n_0\
     );
-\cellular_register_0.#r_rec_reg[0]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg[15]_i_5\: unisim.vcomponents.LUT6
+    generic map(
+      INIT => X"0000000000000001"
+    )
+        port map (
+      I0 => \cellular_register_1.cnt_reg_reg\(20),
+      I1 => \cellular_register_1.cnt_reg_reg\(21),
+      I2 => \cellular_register_1.cnt_reg_reg\(18),
+      I3 => \cellular_register_1.cnt_reg_reg\(19),
+      I4 => \cellular_register_1.cnt_reg_reg\(23),
+      I5 => \cellular_register_1.cnt_reg_reg\(22),
+      O => \cellular_register.cr_rec_reg[15]_i_5_n_0\
+    );
+\cellular_register.cr_rec_reg_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(0),
+      D => prev_reg(0),
       Q => \^q\(0)
     );
-\cellular_register_0.#r_rec_reg[10]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(10),
+      D => prev_reg(10),
       Q => \^q\(10)
     );
-\cellular_register_0.#r_rec_reg[11]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(11),
+      D => prev_reg(11),
       Q => \^q\(11)
     );
-\cellular_register_0.#r_rec_reg[12]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[12]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(12),
+      D => prev_reg(12),
       Q => \^q\(12)
     );
-\cellular_register_0.#r_rec_reg[13]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[13]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(13),
+      D => prev_reg(13),
       Q => \^q\(13)
     );
-\cellular_register_0.#r_rec_reg[14]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[14]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(14),
+      D => prev_reg(14),
       Q => \^q\(14)
     );
-\cellular_register_0.#r_rec_reg[15]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[15]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(15),
+      D => prev_reg(15),
       Q => \^q\(15)
     );
-\cellular_register_0.#r_rec_reg[1]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(1),
+      D => prev_reg(1),
       Q => \^q\(1)
     );
-\cellular_register_0.#r_rec_reg[2]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(2),
+      D => prev_reg(2),
       Q => \^q\(2)
     );
-\cellular_register_0.#r_rec_reg[3]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(3),
+      D => prev_reg(3),
       Q => \^q\(3)
     );
-\cellular_register_0.#r_rec_reg[4]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(4),
+      D => prev_reg(4),
       Q => \^q\(4)
     );
-\cellular_register_0.#r_rec_reg[5]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(5),
+      D => prev_reg(5),
       Q => \^q\(5)
     );
-\cellular_register_0.#r_rec_reg[6]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(6),
+      D => prev_reg(6),
       Q => \^q\(6)
     );
-\cellular_register_0.#r_rec_reg[7]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(7),
+      D => prev_reg(7),
       Q => \^q\(7)
     );
-\cellular_register_0.#r_rec_reg[8]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(8),
+      D => prev_reg(8),
       Q => \^q\(8)
     );
-\cellular_register_0.#r_rec_reg[9]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register.cr_rec_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => ce_0,
+      CE => \cellular_register.cr_rec_reg[15]_i_1_n_0\,
       CLR => AR(0),
-      D => eta2(9),
+      D => prev_reg(9),
       Q => \^q\(9)
     );
-\cnt[0]_i_2\: unisim.vcomponents.LUT1
+\cellular_register_0.prev_reg_reg[0]\: unisim.vcomponents.FDPE
+    generic map(
+      INIT => '1'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      D => result(0),
+      PRE => AR(0),
+      Q => prev_reg(0)
+    );
+\cellular_register_0.prev_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(10),
+      Q => prev_reg(10)
+    );
+\cellular_register_0.prev_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(11),
+      Q => prev_reg(11)
+    );
+\cellular_register_0.prev_reg_reg[12]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(12),
+      Q => prev_reg(12)
+    );
+\cellular_register_0.prev_reg_reg[13]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(13),
+      Q => prev_reg(13)
+    );
+\cellular_register_0.prev_reg_reg[14]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(14),
+      Q => prev_reg(14)
+    );
+\cellular_register_0.prev_reg_reg[15]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(15),
+      Q => prev_reg(15)
+    );
+\cellular_register_0.prev_reg_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(1),
+      Q => prev_reg(1)
+    );
+\cellular_register_0.prev_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(2),
+      Q => prev_reg(2)
+    );
+\cellular_register_0.prev_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(3),
+      Q => prev_reg(3)
+    );
+\cellular_register_0.prev_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(4),
+      Q => prev_reg(4)
+    );
+\cellular_register_0.prev_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(5),
+      Q => prev_reg(5)
+    );
+\cellular_register_0.prev_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(6),
+      Q => prev_reg(6)
+    );
+\cellular_register_0.prev_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(7),
+      Q => prev_reg(7)
+    );
+\cellular_register_0.prev_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(8),
+      Q => prev_reg(8)
+    );
+\cellular_register_0.prev_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      C => CLK,
+      CE => '1',
+      CLR => AR(0),
+      D => result(9),
+      Q => prev_reg(9)
+    );
+\cellular_register_1.cnt_reg[0]_i_2\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
-      I0 => cnt_reg(0),
-      O => \cnt[0]_i_2_n_0\
+      I0 => \cellular_register_1.cnt_reg_reg\(0),
+      O => \cellular_register_1.cnt_reg[0]_i_2_n_0\
     );
-\cnt_reg[0]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[0]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[0]_i_1_n_7\,
-      Q => cnt_reg(0)
+      D => \cellular_register_1.cnt_reg_reg[0]_i_1_n_7\,
+      Q => \cellular_register_1.cnt_reg_reg\(0)
     );
-\cnt_reg[0]_i_1\: unisim.vcomponents.CARRY4
+\cellular_register_1.cnt_reg_reg[0]_i_1\: unisim.vcomponents.CARRY4
      port map (
       CI => '0',
-      CO(3) => \cnt_reg[0]_i_1_n_0\,
-      CO(2 downto 0) => \NLW_cnt_reg[0]_i_1_CO_UNCONNECTED\(2 downto 0),
+      CO(3) => \cellular_register_1.cnt_reg_reg[0]_i_1_n_0\,
+      CO(2 downto 0) => \NLW_cellular_register_1.cnt_reg_reg[0]_i_1_CO_UNCONNECTED\(2 downto 0),
       CYINIT => '0',
       DI(3 downto 0) => B"0001",
-      O(3) => \cnt_reg[0]_i_1_n_4\,
-      O(2) => \cnt_reg[0]_i_1_n_5\,
-      O(1) => \cnt_reg[0]_i_1_n_6\,
-      O(0) => \cnt_reg[0]_i_1_n_7\,
-      S(3 downto 1) => cnt_reg(3 downto 1),
-      S(0) => \cnt[0]_i_2_n_0\
+      O(3) => \cellular_register_1.cnt_reg_reg[0]_i_1_n_4\,
+      O(2) => \cellular_register_1.cnt_reg_reg[0]_i_1_n_5\,
+      O(1) => \cellular_register_1.cnt_reg_reg[0]_i_1_n_6\,
+      O(0) => \cellular_register_1.cnt_reg_reg[0]_i_1_n_7\,
+      S(3 downto 1) => \cellular_register_1.cnt_reg_reg\(3 downto 1),
+      S(0) => \cellular_register_1.cnt_reg[0]_i_2_n_0\
     );
-\cnt_reg[10]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[10]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[8]_i_1_n_5\,
-      Q => cnt_reg(10)
+      D => \cellular_register_1.cnt_reg_reg[8]_i_1_n_5\,
+      Q => \cellular_register_1.cnt_reg_reg\(10)
     );
-\cnt_reg[10]_CE_cooolgate_en_gate_1\: unisim.vcomponents.LUT6
+\cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_gate_1\: unisim.vcomponents.LUT6
     generic map(
       INIT => X"8000000000000000"
     )
         port map (
-      I0 => cnt_reg(9),
-      I1 => cnt_reg(8),
-      I2 => cnt_reg(6),
-      I3 => cnt_reg(5),
-      I4 => cnt_reg(4),
-      I5 => \cnt_reg[0]_i_1_n_0\,
-      O => \cnt_reg[10]_CE_cooolgate_en_sig_1\
+      I0 => \cellular_register_1.cnt_reg_reg\(9),
+      I1 => \cellular_register_1.cnt_reg_reg\(8),
+      I2 => \cellular_register_1.cnt_reg_reg\(6),
+      I3 => \cellular_register_1.cnt_reg_reg\(5),
+      I4 => \cellular_register_1.cnt_reg_reg\(4),
+      I5 => \cellular_register_1.cnt_reg_reg[0]_i_1_n_0\,
+      O => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\
     );
-\cnt_reg[11]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[11]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[8]_i_1_n_4\,
-      Q => cnt_reg(11)
+      D => \cellular_register_1.cnt_reg_reg[8]_i_1_n_4\,
+      Q => \cellular_register_1.cnt_reg_reg\(11)
     );
-\cnt_reg[12]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[12]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[12]_i_1_n_7\,
-      Q => cnt_reg(12)
+      D => \cellular_register_1.cnt_reg_reg[12]_i_1_n_7\,
+      Q => \cellular_register_1.cnt_reg_reg\(12)
     );
-\cnt_reg[12]_i_1\: unisim.vcomponents.CARRY4
+\cellular_register_1.cnt_reg_reg[12]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \cnt_reg[8]_i_1_n_0\,
-      CO(3) => \cnt_reg[12]_i_1_n_0\,
-      CO(2 downto 0) => \NLW_cnt_reg[12]_i_1_CO_UNCONNECTED\(2 downto 0),
+      CI => \cellular_register_1.cnt_reg_reg[8]_i_1_n_0\,
+      CO(3) => \cellular_register_1.cnt_reg_reg[12]_i_1_n_0\,
+      CO(2 downto 0) => \NLW_cellular_register_1.cnt_reg_reg[12]_i_1_CO_UNCONNECTED\(2 downto 0),
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \cnt_reg[12]_i_1_n_4\,
-      O(2) => \cnt_reg[12]_i_1_n_5\,
-      O(1) => \cnt_reg[12]_i_1_n_6\,
-      O(0) => \cnt_reg[12]_i_1_n_7\,
-      S(3 downto 0) => cnt_reg(15 downto 12)
+      O(3) => \cellular_register_1.cnt_reg_reg[12]_i_1_n_4\,
+      O(2) => \cellular_register_1.cnt_reg_reg[12]_i_1_n_5\,
+      O(1) => \cellular_register_1.cnt_reg_reg[12]_i_1_n_6\,
+      O(0) => \cellular_register_1.cnt_reg_reg[12]_i_1_n_7\,
+      S(3 downto 0) => \cellular_register_1.cnt_reg_reg\(15 downto 12)
     );
-\cnt_reg[13]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[13]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[12]_i_1_n_6\,
-      Q => cnt_reg(13)
+      D => \cellular_register_1.cnt_reg_reg[12]_i_1_n_6\,
+      Q => \cellular_register_1.cnt_reg_reg\(13)
     );
-\cnt_reg[14]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[14]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[12]_i_1_n_5\,
-      Q => cnt_reg(14)
+      D => \cellular_register_1.cnt_reg_reg[12]_i_1_n_5\,
+      Q => \cellular_register_1.cnt_reg_reg\(14)
     );
-\cnt_reg[15]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[15]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[12]_i_1_n_4\,
-      Q => cnt_reg(15)
+      D => \cellular_register_1.cnt_reg_reg[12]_i_1_n_4\,
+      Q => \cellular_register_1.cnt_reg_reg\(15)
     );
-\cnt_reg[16]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[16]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[16]_i_1_n_7\,
-      Q => cnt_reg(16)
+      D => \cellular_register_1.cnt_reg_reg[16]_i_1_n_7\,
+      Q => \cellular_register_1.cnt_reg_reg\(16)
     );
-\cnt_reg[16]_i_1\: unisim.vcomponents.CARRY4
+\cellular_register_1.cnt_reg_reg[16]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \cnt_reg[12]_i_1_n_0\,
-      CO(3) => \cnt_reg[16]_i_1_n_0\,
-      CO(2 downto 0) => \NLW_cnt_reg[16]_i_1_CO_UNCONNECTED\(2 downto 0),
+      CI => \cellular_register_1.cnt_reg_reg[12]_i_1_n_0\,
+      CO(3) => \cellular_register_1.cnt_reg_reg[16]_i_1_n_0\,
+      CO(2 downto 0) => \NLW_cellular_register_1.cnt_reg_reg[16]_i_1_CO_UNCONNECTED\(2 downto 0),
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \cnt_reg[16]_i_1_n_4\,
-      O(2) => \cnt_reg[16]_i_1_n_5\,
-      O(1) => \cnt_reg[16]_i_1_n_6\,
-      O(0) => \cnt_reg[16]_i_1_n_7\,
-      S(3 downto 0) => cnt_reg(19 downto 16)
+      O(3) => \cellular_register_1.cnt_reg_reg[16]_i_1_n_4\,
+      O(2) => \cellular_register_1.cnt_reg_reg[16]_i_1_n_5\,
+      O(1) => \cellular_register_1.cnt_reg_reg[16]_i_1_n_6\,
+      O(0) => \cellular_register_1.cnt_reg_reg[16]_i_1_n_7\,
+      S(3 downto 0) => \cellular_register_1.cnt_reg_reg\(19 downto 16)
     );
-\cnt_reg[17]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[17]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[16]_i_1_n_6\,
-      Q => cnt_reg(17)
+      D => \cellular_register_1.cnt_reg_reg[16]_i_1_n_6\,
+      Q => \cellular_register_1.cnt_reg_reg\(17)
     );
-\cnt_reg[18]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[18]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[16]_i_1_n_5\,
-      Q => cnt_reg(18)
+      D => \cellular_register_1.cnt_reg_reg[16]_i_1_n_5\,
+      Q => \cellular_register_1.cnt_reg_reg\(18)
     );
-\cnt_reg[19]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[19]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[10]_CE_cooolgate_en_sig_1\,
+      CE => \cellular_register_1.cnt_reg_reg[10]_CE_cooolgate_en_sig_1\,
       CLR => AR(0),
-      D => \cnt_reg[16]_i_1_n_4\,
-      Q => cnt_reg(19)
+      D => \cellular_register_1.cnt_reg_reg[16]_i_1_n_4\,
+      Q => \cellular_register_1.cnt_reg_reg\(19)
     );
-\cnt_reg[1]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[1]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[0]_i_1_n_6\,
-      Q => cnt_reg(1)
+      D => \cellular_register_1.cnt_reg_reg[0]_i_1_n_6\,
+      Q => \cellular_register_1.cnt_reg_reg\(1)
     );
-\cnt_reg[20]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[20]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[20]_i_1_n_7\,
-      Q => cnt_reg(20)
+      D => \cellular_register_1.cnt_reg_reg[20]_i_1_n_7\,
+      Q => \cellular_register_1.cnt_reg_reg\(20)
     );
-\cnt_reg[20]_i_1\: unisim.vcomponents.CARRY4
+\cellular_register_1.cnt_reg_reg[20]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \cnt_reg[16]_i_1_n_0\,
-      CO(3 downto 0) => \NLW_cnt_reg[20]_i_1_CO_UNCONNECTED\(3 downto 0),
+      CI => \cellular_register_1.cnt_reg_reg[16]_i_1_n_0\,
+      CO(3 downto 0) => \NLW_cellular_register_1.cnt_reg_reg[20]_i_1_CO_UNCONNECTED\(3 downto 0),
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \cnt_reg[20]_i_1_n_4\,
-      O(2) => \cnt_reg[20]_i_1_n_5\,
-      O(1) => \cnt_reg[20]_i_1_n_6\,
-      O(0) => \cnt_reg[20]_i_1_n_7\,
-      S(3 downto 0) => cnt_reg(23 downto 20)
+      O(3) => \cellular_register_1.cnt_reg_reg[20]_i_1_n_4\,
+      O(2) => \cellular_register_1.cnt_reg_reg[20]_i_1_n_5\,
+      O(1) => \cellular_register_1.cnt_reg_reg[20]_i_1_n_6\,
+      O(0) => \cellular_register_1.cnt_reg_reg[20]_i_1_n_7\,
+      S(3 downto 0) => \cellular_register_1.cnt_reg_reg\(23 downto 20)
     );
-\cnt_reg[21]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[21]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[20]_i_1_n_6\,
-      Q => cnt_reg(21)
+      D => \cellular_register_1.cnt_reg_reg[20]_i_1_n_6\,
+      Q => \cellular_register_1.cnt_reg_reg\(21)
     );
-\cnt_reg[22]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[22]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[20]_i_1_n_5\,
-      Q => cnt_reg(22)
+      D => \cellular_register_1.cnt_reg_reg[20]_i_1_n_5\,
+      Q => \cellular_register_1.cnt_reg_reg\(22)
     );
-\cnt_reg[23]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[23]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[20]_i_1_n_4\,
-      Q => cnt_reg(23)
+      D => \cellular_register_1.cnt_reg_reg[20]_i_1_n_4\,
+      Q => \cellular_register_1.cnt_reg_reg\(23)
     );
-\cnt_reg[2]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[2]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[0]_i_1_n_5\,
-      Q => cnt_reg(2)
+      D => \cellular_register_1.cnt_reg_reg[0]_i_1_n_5\,
+      Q => \cellular_register_1.cnt_reg_reg\(2)
     );
-\cnt_reg[3]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[3]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[0]_i_1_n_4\,
-      Q => cnt_reg(3)
+      D => \cellular_register_1.cnt_reg_reg[0]_i_1_n_4\,
+      Q => \cellular_register_1.cnt_reg_reg\(3)
     );
-\cnt_reg[4]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[4]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
-      CE => \cnt_reg[0]_i_1_n_0\,
+      CE => \cellular_register_1.cnt_reg_reg[0]_i_1_n_0\,
       CLR => AR(0),
-      D => \cnt_reg[4]_i_1_n_7\,
-      Q => cnt_reg(4)
+      D => \cellular_register_1.cnt_reg_reg[4]_i_1_n_7\,
+      Q => \cellular_register_1.cnt_reg_reg\(4)
     );
-\cnt_reg[4]_i_1\: unisim.vcomponents.CARRY4
+\cellular_register_1.cnt_reg_reg[4]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \cnt_reg[0]_i_1_n_0\,
-      CO(3) => \cnt_reg[4]_i_1_n_0\,
-      CO(2 downto 0) => \NLW_cnt_reg[4]_i_1_CO_UNCONNECTED\(2 downto 0),
+      CI => \cellular_register_1.cnt_reg_reg[0]_i_1_n_0\,
+      CO(3) => \cellular_register_1.cnt_reg_reg[4]_i_1_n_0\,
+      CO(2 downto 0) => \NLW_cellular_register_1.cnt_reg_reg[4]_i_1_CO_UNCONNECTED\(2 downto 0),
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \cnt_reg[4]_i_1_n_4\,
-      O(2) => \cnt_reg[4]_i_1_n_5\,
-      O(1) => \cnt_reg[4]_i_1_n_6\,
-      O(0) => \cnt_reg[4]_i_1_n_7\,
-      S(3 downto 0) => cnt_reg(7 downto 4)
+      O(3) => \cellular_register_1.cnt_reg_reg[4]_i_1_n_4\,
+      O(2) => \cellular_register_1.cnt_reg_reg[4]_i_1_n_5\,
+      O(1) => \cellular_register_1.cnt_reg_reg[4]_i_1_n_6\,
+      O(0) => \cellular_register_1.cnt_reg_reg[4]_i_1_n_7\,
+      S(3 downto 0) => \cellular_register_1.cnt_reg_reg\(7 downto 4)
     );
-\cnt_reg[5]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[5]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[4]_i_1_n_6\,
-      Q => cnt_reg(5)
+      D => \cellular_register_1.cnt_reg_reg[4]_i_1_n_6\,
+      Q => \cellular_register_1.cnt_reg_reg\(5)
     );
-\cnt_reg[6]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[6]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[4]_i_1_n_5\,
-      Q => cnt_reg(6)
+      D => \cellular_register_1.cnt_reg_reg[4]_i_1_n_5\,
+      Q => \cellular_register_1.cnt_reg_reg\(6)
     );
-\cnt_reg[7]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[7]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[4]_i_1_n_4\,
-      Q => cnt_reg(7)
+      D => \cellular_register_1.cnt_reg_reg[4]_i_1_n_4\,
+      Q => \cellular_register_1.cnt_reg_reg\(7)
     );
-\cnt_reg[8]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[8]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[8]_i_1_n_7\,
-      Q => cnt_reg(8)
+      D => \cellular_register_1.cnt_reg_reg[8]_i_1_n_7\,
+      Q => \cellular_register_1.cnt_reg_reg\(8)
     );
-\cnt_reg[8]_i_1\: unisim.vcomponents.CARRY4
+\cellular_register_1.cnt_reg_reg[8]_i_1\: unisim.vcomponents.CARRY4
      port map (
-      CI => \cnt_reg[4]_i_1_n_0\,
-      CO(3) => \cnt_reg[8]_i_1_n_0\,
-      CO(2 downto 0) => \NLW_cnt_reg[8]_i_1_CO_UNCONNECTED\(2 downto 0),
+      CI => \cellular_register_1.cnt_reg_reg[4]_i_1_n_0\,
+      CO(3) => \cellular_register_1.cnt_reg_reg[8]_i_1_n_0\,
+      CO(2 downto 0) => \NLW_cellular_register_1.cnt_reg_reg[8]_i_1_CO_UNCONNECTED\(2 downto 0),
       CYINIT => '0',
       DI(3 downto 0) => B"0000",
-      O(3) => \cnt_reg[8]_i_1_n_4\,
-      O(2) => \cnt_reg[8]_i_1_n_5\,
-      O(1) => \cnt_reg[8]_i_1_n_6\,
-      O(0) => \cnt_reg[8]_i_1_n_7\,
-      S(3 downto 0) => cnt_reg(11 downto 8)
+      O(3) => \cellular_register_1.cnt_reg_reg[8]_i_1_n_4\,
+      O(2) => \cellular_register_1.cnt_reg_reg[8]_i_1_n_5\,
+      O(1) => \cellular_register_1.cnt_reg_reg[8]_i_1_n_6\,
+      O(0) => \cellular_register_1.cnt_reg_reg[8]_i_1_n_7\,
+      S(3 downto 0) => \cellular_register_1.cnt_reg_reg\(11 downto 8)
     );
-\cnt_reg[9]\: unisim.vcomponents.FDCE
-     port map (
+\cellular_register_1.cnt_reg_reg[9]\: unisim.vcomponents.FDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
       C => CLK,
       CE => '1',
       CLR => AR(0),
-      D => \cnt_reg[8]_i_1_n_6\,
-      Q => cnt_reg(9)
+      D => \cellular_register_1.cnt_reg_reg[8]_i_1_n_6\,
+      Q => \cellular_register_1.cnt_reg_reg\(9)
+    );
+result_0_0: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(1),
+      I1 => \^q\(0),
+      I2 => \^q\(15),
+      O => result(0)
+    );
+result_0_1: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(2),
+      I1 => \^q\(1),
+      I2 => \^q\(0),
+      O => result(1)
+    );
+result_0_10: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(11),
+      I1 => \^q\(10),
+      I2 => \^q\(9),
+      O => result(10)
+    );
+result_0_11: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(12),
+      I1 => \^q\(11),
+      I2 => \^q\(10),
+      O => result(11)
+    );
+result_0_12: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(13),
+      I1 => \^q\(12),
+      I2 => \^q\(11),
+      O => result(12)
+    );
+result_0_13: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(14),
+      I1 => \^q\(13),
+      I2 => \^q\(12),
+      O => result(13)
+    );
+result_0_14: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(15),
+      I1 => \^q\(14),
+      I2 => \^q\(13),
+      O => result(14)
+    );
+result_0_15: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(0),
+      I1 => \^q\(15),
+      I2 => \^q\(14),
+      O => result(15)
+    );
+result_0_2: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(3),
+      I1 => \^q\(2),
+      I2 => \^q\(1),
+      O => result(2)
+    );
+result_0_3: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(4),
+      I1 => \^q\(3),
+      I2 => \^q\(2),
+      O => result(3)
+    );
+result_0_4: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(5),
+      I1 => \^q\(4),
+      I2 => \^q\(3),
+      O => result(4)
+    );
+result_0_5: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(6),
+      I1 => \^q\(5),
+      I2 => \^q\(4),
+      O => result(5)
+    );
+result_0_6: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(7),
+      I1 => \^q\(6),
+      I2 => \^q\(5),
+      O => result(6)
+    );
+result_0_7: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(8),
+      I1 => \^q\(7),
+      I2 => \^q\(6),
+      O => result(7)
+    );
+result_0_8: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(9),
+      I1 => \^q\(8),
+      I2 => \^q\(7),
+      O => result(8)
+    );
+result_0_9: unisim.vcomponents.LUT3
+    generic map(
+      INIT => X"7C"
+    )
+        port map (
+      I0 => \^q\(10),
+      I1 => \^q\(9),
+      I2 => \^q\(8),
+      O => result(9)
     );
 end STRUCTURE;
 library IEEE;
@@ -935,7 +1080,7 @@ entity CellularTop is
   attribute NotValidForBitStream : boolean;
   attribute NotValidForBitStream of CellularTop : entity is true;
   attribute ECO_CHECKSUM : string;
-  attribute ECO_CHECKSUM of CellularTop : entity is "b5f1c6bc";
+  attribute ECO_CHECKSUM of CellularTop : entity is "b746f7dd";
   attribute POWER_OPT_BRAM_CDC : integer;
   attribute POWER_OPT_BRAM_CDC of CellularTop : entity is 0;
   attribute POWER_OPT_BRAM_SR_ADDR : integer;

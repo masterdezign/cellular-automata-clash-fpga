@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Wed Sep 11 15:48:16 2019
+| Date         : Wed Sep 11 17:38:16 2019
 | Host         : osboxes running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_timing_summary -file ./outCellular/post_synth_timing_summary.rpt
 | Design       : CellularTop
@@ -190,9 +190,9 @@ PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Vio
 Max Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             6.486ns  (required time - arrival time)
-  Source:                 CELLULAR_inst/cnt_reg[22]/C
+  Source:                 CELLULAR_inst/cellular_register_1.cnt_reg_reg[2]/C
                             (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/CE
+  Destination:            CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/CE
                             (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
@@ -219,15 +219,15 @@ Slack (MET) :             6.486ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.803     2.285    clk100_IBUF
                          BUFG (Prop_bufg_I_O)         0.096     2.381 r  clk100_IBUF_BUFG_inst/O
                          net (fo=56, unplaced)        0.584     2.965    CELLULAR_inst/CLK
-                         FDCE                                         r  CELLULAR_inst/cnt_reg[22]/C
+                         FDCE                                         r  CELLULAR_inst/cellular_register_1.cnt_reg_reg[2]/C
   -------------------------------------------------------------------    -------------------
-                         FDCE (Prop_fdce_C_Q)         0.478     3.443 f  CELLULAR_inst/cnt_reg[22]/Q
-                         net (fo=2, unplaced)         0.976     4.419    CELLULAR_inst/cnt_reg[22]
-                         LUT6 (Prop_lut6_I0_O)        0.295     4.714 r  CELLULAR_inst/cellular_register_0.#r_rec[15]_i_3/O
-                         net (fo=1, unplaced)         0.732     5.446    CELLULAR_inst/cellular_register_0.#r_rec[15]_i_3_n_0
-                         LUT4 (Prop_lut4_I1_O)        0.124     5.570 r  CELLULAR_inst/cellular_register_0.#r_rec[15]_i_1/O
-                         net (fo=16, unplaced)        0.527     6.097    CELLULAR_inst/ce_0
-                         FDCE                                         r  CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/CE
+                         FDCE (Prop_fdce_C_Q)         0.478     3.443 f  CELLULAR_inst/cellular_register_1.cnt_reg_reg[2]/Q
+                         net (fo=2, unplaced)         0.976     4.419    CELLULAR_inst/cellular_register_1.cnt_reg_reg[2]
+                         LUT6 (Prop_lut6_I0_O)        0.295     4.714 r  CELLULAR_inst/cellular_register.cr_rec_reg[15]_i_3/O
+                         net (fo=1, unplaced)         0.732     5.446    CELLULAR_inst/cellular_register.cr_rec_reg[15]_i_3_n_0
+                         LUT4 (Prop_lut4_I1_O)        0.124     5.570 r  CELLULAR_inst/cellular_register.cr_rec_reg[15]_i_1/O
+                         net (fo=16, unplaced)        0.527     6.097    CELLULAR_inst/cellular_register.cr_rec_reg[15]_i_1_n_0
+                         FDCE                                         r  CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/CE
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -238,10 +238,10 @@ Slack (MET) :             6.486ns  (required time - arrival time)
                          net (fo=1, unplaced)         0.763    12.174    clk100_IBUF
                          BUFG (Prop_bufg_I_O)         0.091    12.265 r  clk100_IBUF_BUFG_inst/O
                          net (fo=56, unplaced)        0.439    12.704    CELLULAR_inst/CLK
-                         FDCE                                         r  CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/C
+                         FDCE                                         r  CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/C
                          clock pessimism              0.116    12.820    
                          clock uncertainty           -0.035    12.784    
-                         FDCE (Setup_fdce_C_CE)      -0.202    12.582    CELLULAR_inst/cellular_register_0.#r_rec_reg[0]
+                         FDCE (Setup_fdce_C_CE)      -0.202    12.582    CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]
   -------------------------------------------------------------------
                          required time                         12.582    
                          arrival time                          -6.097    
@@ -255,9 +255,9 @@ Slack (MET) :             6.486ns  (required time - arrival time)
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.142ns  (arrival time - required time)
-  Source:                 CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/C
+  Source:                 CELLULAR_inst/cellular_register.cr_rec_reg_reg[15]/C
                             (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/D
+  Destination:            CELLULAR_inst/cellular_register_0.prev_reg_reg[0]/D
                             (rising edge-triggered cell FDPE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
@@ -279,13 +279,13 @@ Slack (MET) :             0.142ns  (arrival time - required time)
                          net (fo=1, unplaced)         0.338     0.588    clk100_IBUF
                          BUFG (Prop_bufg_I_O)         0.026     0.614 r  clk100_IBUF_BUFG_inst/O
                          net (fo=56, unplaced)        0.114     0.728    CELLULAR_inst/CLK
-                         FDCE                                         r  CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/C
+                         FDCE                                         r  CELLULAR_inst/cellular_register.cr_rec_reg_reg[15]/C
   -------------------------------------------------------------------    -------------------
-                         FDCE (Prop_fdce_C_Q)         0.147     0.875 r  CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/Q
-                         net (fo=4, unplaced)         0.141     1.016    CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[15]_0[15]
-                         LUT3 (Prop_lut3_I2_O)        0.098     1.114 r  CELLULAR_inst/cellular_carray3t_r_app_arg_0/#tup_app_arg_0_0/O
-                         net (fo=1, unplaced)         0.000     1.114    CELLULAR_inst/cellular_carray3t_r_app_arg_0/result[0]
-                         FDPE                                         r  CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/D
+                         FDCE (Prop_fdce_C_Q)         0.147     0.875 r  CELLULAR_inst/cellular_register.cr_rec_reg_reg[15]/Q
+                         net (fo=4, unplaced)         0.141     1.016    CELLULAR_inst/Q[15]
+                         LUT3 (Prop_lut3_I2_O)        0.098     1.114 r  CELLULAR_inst/result_0_0/O
+                         net (fo=1, unplaced)         0.000     1.114    CELLULAR_inst/result[0]
+                         FDPE                                         r  CELLULAR_inst/cellular_register_0.prev_reg_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -295,10 +295,10 @@ Slack (MET) :             0.142ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk100_IBUF_inst/O
                          net (fo=1, unplaced)         0.356     0.794    clk100_IBUF
                          BUFG (Prop_bufg_I_O)         0.029     0.823 r  clk100_IBUF_BUFG_inst/O
-                         net (fo=56, unplaced)        0.259     1.082    CELLULAR_inst/cellular_carray3t_r_app_arg_0/CLK
-                         FDPE                                         r  CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/C
+                         net (fo=56, unplaced)        0.259     1.082    CELLULAR_inst/CLK
+                         FDPE                                         r  CELLULAR_inst/cellular_register_0.prev_reg_reg[0]/C
                          clock pessimism             -0.209     0.873    
-                         FDPE (Hold_fdpe_C_D)         0.099     0.972    CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]
+                         FDPE (Hold_fdpe_C_D)         0.099     0.972    CELLULAR_inst/cellular_register_0.prev_reg_reg[0]
   -------------------------------------------------------------------
                          required time                         -0.972    
                          arrival time                           1.114    
@@ -318,8 +318,8 @@ Sources:            { clk100 }
 
 Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
 Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845                clk100_IBUF_BUFG_inst/I
-Low Pulse Width   Slow    FDPE/C   n/a            0.500         5.000       4.500                CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/C
-High Pulse Width  Slow    FDPE/C   n/a            0.500         5.000       4.500                CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500                CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500                CELLULAR_inst/cellular_register.cr_rec_reg_reg[0]/C
 
 
 
