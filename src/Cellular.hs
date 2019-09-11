@@ -13,10 +13,9 @@ import FPGA.CellularArray2
     , t_output = PortName "current_state"
     }) #-}
 topEntity
-  :: Clock  System Source
-  -> Reset  System Asynchronous
-  -> Signal System (BitVector 16)
-topEntity = exposeClockReset r
+  :: Clock System
+     -> Reset System -> Enable System -> Signal System (BitVector 16)
+topEntity clk rst en = withClockResetEnable @System clk rst en r
   where ca = cArray3 d16 (Rule (110 :: BitVector 8)) 1 r
 
         -- Divide the clock to the "human" scale, order of Hz

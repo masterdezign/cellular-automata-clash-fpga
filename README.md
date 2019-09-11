@@ -13,21 +13,8 @@ An example target device is Digilent Nexys4 board.
 ## Building the project
 
 #### Install [Vivado](https://www.xilinx.com/support/download.html)
-#### Install Clash 0.99.3
 
-NB: The following commands should *not* be run in a directory containing a stack.yaml file.
-
-Install Stack from https://haskellstack.org
-
-     $ curl -sSL https://get.haskellstack.org/ | sh
-
-Run
-
-     $ stack setup --resolver=lts-12.19
-
-Install Clash
-
-     $ stack install --resolver=lts-12.19 clash-ghc-0.99.3
+#### Install [Clash 1.0](https://clash-lang.org/install/)
 
 #### Build the project
 

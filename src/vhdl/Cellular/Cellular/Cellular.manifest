@@ -1,2 +1,2 @@
-Manifest {manifestHash = (4375388962264592518,Nothing), portInNames = ["CLOCK","RST"], portInTypes = ["std_logic","std_logic"], portOutNames = ["current_state"], portOutTypes = ["std_logic_vector(15 downto 0)"], componentNames = ["cellular_carray3t","Cellular"]}
+Manifest {manifestHash = (-7746718642220888374,Nothing), portInNames = ["CLOCK","RST","en"], portInTypes = ["Cellular.cellular_types.clk_system","Cellular.cellular_types.rst_system","boolean"], portOutNames = ["current_state"], portOutTypes = ["std_logic_vector(15 downto 0)"], componentNames = ["Cellular"]}
 

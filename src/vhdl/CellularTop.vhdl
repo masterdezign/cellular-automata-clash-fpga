@@ -25,6 +25,7 @@ component Cellular is
        CLOCK      : in std_logic;
        -- asynchronous reset: active low
        RST : in std_logic;
+       en : in boolean;
        current_state   : out std_logic_vector(15 downto 0));
 end component;
 
@@ -35,6 +36,7 @@ begin
        -- clock
        CLOCK => clk100,
        RST => reset,
+       en => true,
        current_state => led
     );
 

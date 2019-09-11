@@ -1,6 +1,8 @@
-{-# LANGUAGE ImplicitParams #-}
--- Implements array of cellular automata
-module FPGA.CellularArray2 where
+module FPGA.CellularArray2
+  (
+  Rule (..)
+  , cArray3
+  ) where
 
 import Clash.Prelude
 
@@ -17,12 +19,12 @@ cArray3T size (Rule rule) prev newInput = (next, prev)
         inputs = iterate size (flip rotateL 1) newInput'
 
 cArray3
-  :: (BitSize p ~ (3 + i), ?rst::Reset domain synchronous,
-      ?clk::Clock domain gated, BitPack p, BitPack a,
-      KnownNat (BitSize a), KnownNat n, Bits p) =>
-     SNat n
-     -> Rule a
-     -> BitVector n
-     -> Signal domain p
-     -> Signal domain (BitVector n)
+  :: (HiddenClockResetEnable dom, BitPack p, BitPack a,
+     KnownNat (BitSize a), KnownNat n, Bits p,
+     BitSize p ~ (3 + i))
+  => SNat n
+  -> Rule a
+  -> BitVector n
+  -> Signal dom p
+  -> Signal dom (BitVector n)
 cArray3 size rule state0 = mealy (cArray3T size rule) state0
