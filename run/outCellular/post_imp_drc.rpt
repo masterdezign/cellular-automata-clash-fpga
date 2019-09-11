@@ -1,9 +1,13 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Tue Jan 24 10:29:55 2017
-| Host         : opt-penkovskyi01 running 64-bit Ubuntu 14.04.4 LTS
-| Command      : report_drc
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Sep 11 15:48:44 2019
+| Host         : osboxes running 64-bit Ubuntu 16.04.6 LTS
+| Command      : report_drc -file ./outCellular/post_imp_drc.rpt
+| Design       : CellularTop
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
 ------------------------------------------------------------------------------------
 
 Report DRC
@@ -21,6 +25,10 @@ Table of Contents
            Ruledeck: default
              Max violations: <unlimited>
              Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
 
 2. REPORT DETAILS
 -----------------

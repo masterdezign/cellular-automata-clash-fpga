@@ -1,8 +1,8 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Tue Jan 24 10:29:54 2017
-| Host         : opt-penkovskyi01 running 64-bit Ubuntu 14.04.4 LTS
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Sep 11 15:48:41 2019
+| Host         : osboxes running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_utilization -file ./outCellular/post_route_util.rpt
 | Design       : CellularTop
 | Device       : 7a100tcsg324-1
@@ -64,26 +64,27 @@ Table of Contents
 2. Slice Logic Distribution
 ---------------------------
 
-+-------------------------------------------------------------+---------+-------+-----------+-------+
-|                          Site Type                          |   Used  | Fixed | Available | Util% |
-+-------------------------------------------------------------+---------+-------+-----------+-------+
-| Slice                                                       |      16 |     0 |     15850 |  0.10 |
-|   SLICEL                                                    |      13 |     0 |           |       |
-|   SLICEM                                                    |       3 |     0 |           |       |
-| LUT as Logic                                                |      16 |     0 |     63400 |  0.03 |
-|   using O5 output only                                      |       0 |       |           |       |
-|   using O6 output only                                      |       9 |       |           |       |
-|   using O5 and O6                                           |       7 |       |           |       |
-| LUT as Memory                                               |       0 |     0 |     19000 |  0.00 |
-|   LUT as Distributed RAM                                    |       0 |     0 |           |       |
-|   LUT as Shift Register                                     |       0 |     0 |           |       |
-| LUT Flip Flop Pairs                                         |      49 |     0 |     63400 |  0.08 |
-|   fully used LUT-FF pairs                                   |      12 |       |           |       |
-|   LUT-FF pairs with unused LUT                              |      33 |       |           |       |
-|   LUT-FF pairs with unused Flip Flop                        |       4 |       |           |       |
-| Unique Control Sets                                         |       3 |       |           |       |
-| Minimum number of registers lost to control set restriction | 8(Lost) |       |           |       |
-+-------------------------------------------------------------+---------+-------+-----------+-------+
++--------------------------------------------+------+-------+-----------+-------+
+|                  Site Type                 | Used | Fixed | Available | Util% |
++--------------------------------------------+------+-------+-----------+-------+
+| Slice                                      |   20 |     0 |     15850 |  0.13 |
+|   SLICEL                                   |   16 |     0 |           |       |
+|   SLICEM                                   |    4 |     0 |           |       |
+| LUT as Logic                               |   16 |     0 |     63400 |  0.03 |
+|   using O5 output only                     |    0 |       |           |       |
+|   using O6 output only                     |    9 |       |           |       |
+|   using O5 and O6                          |    7 |       |           |       |
+| LUT as Memory                              |    0 |     0 |     19000 |  0.00 |
+|   LUT as Distributed RAM                   |    0 |     0 |           |       |
+|   LUT as Shift Register                    |    0 |     0 |           |       |
+| Slice Registers                            |   56 |     0 |    126800 |  0.04 |
+|   Register driven from within the Slice    |   35 |       |           |       |
+|   Register driven from outside the Slice   |   21 |       |           |       |
+|     LUT in front of the register is unused |   18 |       |           |       |
+|     LUT in front of the register is used   |    3 |       |           |       |
+| Unique Control Sets                        |    4 |       |     15850 |  0.03 |
++--------------------------------------------+------+-------+-----------+-------+
+* Note: Available Control Sets calculated as Slice Registers / 8, Review the Control Sets Report for more information regarding control sets.
 
 
 3. Memory
@@ -124,11 +125,10 @@ Table of Contents
 | OUT_FIFO                    |    0 |     0 |        24 |  0.00 |
 | IN_FIFO                     |    0 |     0 |        24 |  0.00 |
 | IDELAYCTRL                  |    0 |     0 |         6 |  0.00 |
-| IBUFGDS                     |    0 |     0 |       202 |  0.00 |
+| IBUFDS                      |    0 |     0 |       202 |  0.00 |
 | PHASER_OUT/PHASER_OUT_PHY   |    0 |     0 |        24 |  0.00 |
 | PHASER_IN/PHASER_IN_PHY     |    0 |     0 |        24 |  0.00 |
 | IDELAYE2/IDELAYE2_FINEDELAY |    0 |     0 |       300 |  0.00 |
-| IBUFDS_GTE2                 |    0 |     0 |         4 |  0.00 |
 | ILOGIC                      |    0 |     0 |       210 |  0.00 |
 | OLOGIC                      |    0 |     0 |       210 |  0.00 |
 +-----------------------------+------+-------+-----------+-------+

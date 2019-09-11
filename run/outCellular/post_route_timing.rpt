@@ -1,264 +1,181 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date         : Tue Jan 24 10:29:54 2017
-| Host         : opt-penkovskyi01 running 64-bit Ubuntu 14.04.4 LTS
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Wed Sep 11 15:48:41 2019
+| Host         : osboxes running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_timing -sort_by group -max_paths 100 -path_type summary -file ./outCellular/post_route_timing.rpt
 | Design       : CellularTop
 | Device       : 7a100t-csg324
-| Speed File   : -1  PRODUCTION 1.14 2014-09-11
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
 --------------------------------------------------------------------------------------------------------------------------
 
 Timing Report
 
 Startpoint                     Endpoint                       Slack(ns)     
 ----------------------------------------------------------------------------
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[16]/CE
-                                                              6.009         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[17]/CE
-                                                              6.009         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[18]/CE
-                                                              6.009         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[19]/CE
-                                                              6.009         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[10]/CE
-                                                              6.344         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[11]/CE
-                                                              6.344         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[12]/CE
-                                                              6.416         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[13]/CE
-                                                              6.416         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[14]/CE
-                                                              6.416         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[15]/CE
-                                                              6.416         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[10]/CE
-                                                              6.926         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[11]/CE
-                                                              6.926         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[6]/CE
-                                                              6.926         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[7]/CE
-                                                              6.926         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[8]/CE
-                                                              6.926         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[9]/CE
-                                                              6.926         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[0]/CE
-                                                              6.928         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[12]/CE
-                                                              6.928         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[13]/CE
-                                                              6.928         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[14]/CE
-                                                              6.928         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[15]/CE
-                                                              6.928         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[1]/CE
-                                                              7.076         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[2]/CE
-                                                              7.076         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[3]/CE
-                                                              7.076         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[4]/CE
-                                                              7.076         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[5]/CE
-                                                              7.076         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[11]/D
-                                                              7.233         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[10]/D
-                                                              7.327         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[21]/D
-                                                              7.528         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[23]/D
-                                                              7.549         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[22]/D
-                                                              7.623         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[20]/D
-                                                              7.639         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[17]/D
-                                                              7.643         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[19]/D
-                                                              7.664         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[18]/D
-                                                              7.738         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[16]/D
-                                                              7.754         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[13]/D
-                                                              7.757         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[15]/D
-                                                              7.778         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[14]/D
-                                                              7.852         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[12]/D
-                                                              7.868         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[9]/D
-                                                              7.872         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[8]/D
-                                                              7.983         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[5]/D
-                                                              7.988         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[7]/D
-                                                              8.009         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[6]/D
-                                                              8.083         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[4]/D
-                                                              8.099         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[15]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[14]/D
-                                                              8.101         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[15]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[15]/D
-                                                              8.112         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[3]/D
-                                                              8.257         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[2]/D
-                                                              8.317         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[11]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[12]/D
-                                                              8.463         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[6]/D
-                                                              8.468         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[6]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[5]/D
-                                                              8.470         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[0]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[1]/D
-                                                              8.502         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[3]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[2]/D
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[16]/CE   6.219         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[17]/CE   6.219         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[18]/CE   6.219         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[19]/CE   6.219         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[12]/CE   6.406         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[13]/CE   6.406         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[14]/CE   6.406         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[15]/CE   6.406         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/CE
+                                                              6.473         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[1]/CE
+                                                              6.473         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/CE
+                                                              6.473         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[6]/CE
+                                                              6.475         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[10]/CE
+                                                              6.475         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[11]/CE
+                                                              6.475         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/CE
+                                                              6.475         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[9]/CE
+                                                              6.475         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[3]/CE
+                                                              6.537         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/CE
+                                                              6.537         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[5]/CE
+                                                              6.537         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[7]/CE
+                                                              6.537         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/CE
+                                                              6.537         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[13]/CE
+                                                              6.616         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[14]/CE
+                                                              6.616         
+CELLULAR_inst/cnt_reg[23]/C    CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/CE
+                                                              6.616         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[10]/CE   6.700         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[11]/CE   6.700         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[7]/D     7.062         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[6]/D     7.115         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[5]/D     7.170         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[11]/D    7.372         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[4]/CE    7.457         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[10]/D    7.467         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[3]/D
+                                                              7.500         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[4]/D
+                                                              7.520         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[21]/D    7.528         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[23]/D    7.549         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[22]/D    7.623         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[20]/D    7.639         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[17]/D    7.643         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[19]/D    7.664         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[5]/D
+                                                              7.670         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[18]/D    7.738         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[16]/D    7.754         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[13]/D    7.757         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[15]/D    7.778         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[14]/D    7.852         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[12]/D    7.868         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[9]/D     7.872         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[8]/D     7.983         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[4]/D     8.099         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[3]/D     8.257         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[9]/D
+                                                              8.288         
+CELLULAR_inst/cnt_reg[1]/C     CELLULAR_inst/cnt_reg[2]/D     8.317         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[5]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[6]/D
+                                                              8.477         
+CELLULAR_inst/cnt_reg[0]/C     CELLULAR_inst/cnt_reg[1]/D     8.502         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[7]/D
+                                                              8.526         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[8]/D
+                                                              8.540         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[1]/D
                                                               8.563         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[3]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[4]/D
-                                                              8.575         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[3]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[3]/D
+CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[14]/D
+                                                              8.573         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[11]/D
+                                                              8.577         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[2]/D
                                                               8.582         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[6]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[7]/D
-                                                              8.598         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[9]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[10]/D
-                                                              8.604         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[8]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[8]/D
-                                                              8.612         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[11]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[11]/D
-                                                              8.614         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[9]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[9]/D
-                                                              8.614         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[8]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[9]/D
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[15]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/D
+                                                              8.582         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[13]/D
+                                                              8.585         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[12]/D
+                                                              8.586         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[14]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[14]/D
+                                                              8.587         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[15]/D
+                                                              8.597         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[9]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[9]/D
                                                               8.622         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[15]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[0]/D
-                                                              8.629         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[12]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[11]/D
-                                                              8.631         
-CELLULAR_inst/cellular_topentity_inst/cnt_reg[0]/C
-                               CELLULAR_inst/cellular_topentity_inst/cnt_reg[0]/D
-                                                              8.679         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[1]/D
-                                                              8.734         
-CELLULAR_inst/cellular_topentity_inst/r_rec_reg[14]/C
-                               CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[13]/D
-                                                              8.751         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[15]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[15]/D
-                                                              8.765         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[5]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[5]/D
-                                                              8.765         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[6]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[6]/D
-                                                              8.795         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[12]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[12]/D
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[12]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[12]/D
+                                                              8.655         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[7]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[7]/D
+                                                              8.678         
+CELLULAR_inst/cnt_reg[0]/C     CELLULAR_inst/cnt_reg[0]/D     8.679         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[4]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[4]/D
+                                                              8.688         
+CELLULAR_inst/cellular_register_0.#r_rec_reg[9]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[10]/D
+                                                              8.733         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[10]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[10]/D
+                                                              8.796         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[13]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[13]/D
+                                                              8.796         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[6]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[6]/D
+                                                              8.807         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[1]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[1]/D
                                                               8.823         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[2]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[2]/D
-                                                              8.823         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[10]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[10]/D
-                                                              9.034         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[7]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[7]/D
-                                                              9.036         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[14]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[14]/D
-                                                              9.037         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[4]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[4]/D
-                                                              9.037         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[8]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[8]/D
-                                                              9.038         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[13]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[13]/D
+CELLULAR_inst/cellular_register_0.#r_rec_reg[15]/C
+                               CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/D
+                                                              8.827         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[5]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[5]/D
+                                                              8.890         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[11]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[11]/D
+                                                              8.964         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[0]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[0]/D
+                                                              8.978         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[2]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[2]/D
                                                               9.040         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[3]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[3]/D
-                                                              9.040         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[0]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[0]/D
-                                                              9.176         
-CELLULAR_inst/cellular_topentity_inst/cellular_mealy_r_app_arg/x_reg[1]/C
-                               CELLULAR_inst/cellular_topentity_inst/r_rec_reg[1]/D
-                                                              9.176         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[3]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[3]/D
+                                                              9.085         
+CELLULAR_inst/cellular_carray3t_r_app_arg_0/eta2_reg[8]/C
+                               CELLULAR_inst/cellular_register_0.#r_rec_reg[8]/D
+                                                              9.142         
 
 
 

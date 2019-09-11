@@ -12,7 +12,7 @@ An example target device is Digilent Nexys4 board.
 
 ## Building the project
 
-#### Install [Vivado 2015.4](https://www.xilinx.com/support/download.html)
+#### Install [Vivado](https://www.xilinx.com/support/download.html)
 #### Install Clash 0.99.3
 
 NB: The following commands should *not* be run in a directory containing a stack.yaml file.

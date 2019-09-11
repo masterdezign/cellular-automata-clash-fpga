@@ -1,8 +1,8 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
-| Date             : Tue Jan 24 10:29:31 2017
-| Host             : opt-penkovskyi01 running 64-bit Ubuntu 14.04.4 LTS
+| Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date             : Wed Sep 11 15:48:16 2019
+| Host             : osboxes running 64-bit Ubuntu 16.04.6 LTS
 | Command          : report_power -file ./outCellular/post_synth_power.rpt
 | Design           : CellularTop
 | Device           : xc7a100tcsg324-1
@@ -29,18 +29,21 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------+
-| Total On-Chip Power (W)  | 0.099  |
-| Dynamic (W)              | 0.002  |
-| Device Static (W)        | 0.097  |
-| Effective TJA (C/W)      | 4.6    |
-| Max Ambient (C)          | 84.5   |
-| Junction Temperature (C) | 25.5   |
-| Confidence Level         | Medium |
-| Setting File             | ---    |
-| Simulation Activity File | ---    |
-| Design Nets Matched      | NA     |
-+--------------------------+--------+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.099        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.002        |
+| Device Static (W)        | 0.097        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
+| Confidence Level         | Medium       |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
 1.1 On-Chip Components
@@ -50,8 +53,8 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      110 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       38 |     63400 |            0.06 |
+| Slice Logic    |    <0.001 |       87 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       15 |     63400 |            0.02 |
 |   Register     |    <0.001 |       56 |    126800 |            0.04 |
 |   CARRY4       |    <0.001 |        6 |     15850 |            0.04 |
 |   Others       |     0.000 |        3 |       --- |             --- |
@@ -134,13 +137,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------------------------------+-----------+
-| Name                           | Power (W) |
-+--------------------------------+-----------+
-| CellularTop                    |     0.002 |
-|   CELLULAR_inst                |     0.002 |
-|     cellular_topentity_inst    |     0.002 |
-|       cellular_mealy_r_app_arg |    <0.001 |
-+--------------------------------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| CellularTop     |     0.002 |
+|   CELLULAR_inst |     0.002 |
++-----------------+-----------+
 
 
