@@ -6,7 +6,7 @@ module Cellular
     ( // Inputs
       input  CLOCK // clock
     , input  RST // reset
-    , input  en
+    //, input  en
 
       // Outputs
     , output wire [15:0] current_state
@@ -27,6 +27,9 @@ module Cellular
   wire [23:0] cnt;
   wire [271:0] c$vec;
   wire [255:0] c$vec_0;
+
+  wire en;
+  assign en = 1;
 
   // register begin
   reg [15:0] c$r_rec_reg  = 16'b0000000000000000 ;
