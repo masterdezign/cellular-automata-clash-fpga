@@ -1,0 +1,2 @@
+Manifest {manifestHash = (9137694432002722988,Nothing), portInNames = ["CLOCK","RST","en"], portInTypes = ["","",""], portOutNames = ["current_state"], portOutTypes = ["[15:0]"], componentNames = ["Cellular"]}
+
